@@ -1,0 +1,53 @@
+{
+    "name": "walkerchiu/php-site-cms-int",
+    "type": "library",
+    "authors": [
+        {
+            "name":  "Walker Chiu",
+            "email": "chenjen.chiou@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3",
+        "walkerchiu/php-account-int": "^1.0",
+        "walkerchiu/php-morph-address-int": "^1.0",
+        "walkerchiu/php-morph-image-int": "^1.0",
+        "walkerchiu/php-morph-nav-int": "^1.0",
+        "walkerchiu/php-morph-registration-int": "^1.0",
+        "walkerchiu/php-role-int": "^1.0"
+    },
+    "suggest": {
+        "walkerchiu/php-api-int": "^1.0",
+        "walkerchiu/php-morph-board-int": "^1.0",
+        "walkerchiu/php-morph-comment-int": "^1.0",
+        "walkerchiu/php-morph-category-int": "^1.0",
+        "walkerchiu/php-morph-link-int": "^1.0",
+        "walkerchiu/php-morph-tag-int": "^1.0",
+        "walkerchiu/php-newsletter-int": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WalkerChiu\\SiteCMS\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WalkerChiu\\SiteCMS\\SiteCMSServiceProvider"
+            ],
+            "aliases": {
+                "Site":   "WalkerChiu\\SiteCMS\\Models\\Entities\\Site",
+                "Email":  "WalkerChiu\\SiteCMS\\Models\\Entities\\Email",
+                "Layout": "WalkerChiu\\SiteCMS\\Models\\Entities\\Layout"
+            }
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
