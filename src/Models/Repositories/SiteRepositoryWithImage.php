@@ -7,11 +7,13 @@ use WalkerChiu\Core\Models\Forms\FormTrait;
 use WalkerChiu\Core\Models\Repositories\Repository;
 use WalkerChiu\Core\Models\Repositories\RepositoryTrait;
 use WalkerChiu\Core\Models\Services\PackagingFactory;
+use WalkerChiu\MorphImage\Models\Repositories\ImageRepositoryTrait;
 
-class SiteRepository extends Repository
+class SiteRepositoryWithImage extends Repository
 {
     use FormTrait;
     use RepositoryTrait;
+    use ImageRepositoryTrait;
 
     protected $instance;
 

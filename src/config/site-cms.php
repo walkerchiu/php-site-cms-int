@@ -37,7 +37,7 @@ return [
         'morph-board'        => 0,
         'morph-category'     => 0,
         'morph-comment'      => 0,
-        'morph-image'        => 1,
+        'morph-image'        => 0,
         'morph-nav'          => 1,
         'morph-registration' => 0,
         'morph-tag'          => 0,

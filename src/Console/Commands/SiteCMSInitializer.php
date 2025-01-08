@@ -75,8 +75,11 @@ class SiteCMSInitializer extends Command
         ]);
         $this->info(config('wk-core.table.site-cms.sites') .' have been affected.');
         $this->info(config('wk-core.table.site-cms.sites_lang') .' have been affected.');
-        $this->info(config('wk-core.table.morph-image.images') .' have been affected.');
-        $this->info(config('wk-core.table.morph-image.images_lang') .' have been affected.');
+
+        if (config('wk-site-cms.onoff.morph-image')) {
+            $this->info(config('wk-core.table.morph-image.images') .' have been affected.');
+            $this->info(config('wk-core.table.morph-image.images_lang') .' have been affected.');
+        }
 
         if (config('wk-site-cms.initializer.site.default_data.address')) {
             $this->initializeAddress('site', $site->id);

@@ -14,7 +14,6 @@
         "php": "^7.4|^8.0",
         "walkerchiu/php-account-int": "^1.1",
         "walkerchiu/php-morph-address-int": "^1.1",
-        "walkerchiu/php-morph-image-int": "^1.1",
         "walkerchiu/php-morph-nav-int": "^1.1",
         "walkerchiu/php-role-int": "^1.1"
     },
@@ -26,6 +25,7 @@
         "walkerchiu/php-morph-board-int": "^1.1",
         "walkerchiu/php-morph-comment-int": "^1.1",
         "walkerchiu/php-morph-category-int": "^1.1",
+        "walkerchiu/php-morph-image-int": "^1.1",
         "walkerchiu/php-morph-link-int": "^1.1",
         "walkerchiu/php-morph-registration-int": "^1.1",
         "walkerchiu/php-morph-tag-int": "^1.1",
@@ -42,9 +42,11 @@
                 "WalkerChiu\\SiteCMS\\SiteCMSServiceProvider"
             ],
             "aliases": {
-                "Site":   "WalkerChiu\\SiteCMS\\Models\\Entities\\Site",
-                "Email":  "WalkerChiu\\SiteCMS\\Models\\Entities\\Email",
-                "Layout": "WalkerChiu\\SiteCMS\\Models\\Entities\\Layout"
+                "Site":            "WalkerChiu\\SiteCMS\\Models\\Entities\\Site",
+                "SiteWithImage":   "WalkerChiu\\SiteCMS\\Models\\Entities\\SiteWithImage",
+                "Email":           "WalkerChiu\\SiteCMS\\Models\\Entities\\Email",
+                "Layout":          "WalkerChiu\\SiteCMS\\Models\\Entities\\Layout",
+                "LayoutWithImage": "WalkerChiu\\SiteCMS\\Models\\Entities\\LayoutWithImage"
             }
         }
     },
